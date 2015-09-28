@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fb {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -5px;
+}
+
+.sprite-fb-hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -5px;
+}
+
+.sprite-github {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -62px;
+}
+
+.sprite-github-hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -62px;
+}
+
+.sprite-tw {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -5px;
+}
+
+.sprite-tw-hover {
+    width: 47px;
+    height: 47px;
+    background-position: -119px -62px;
+}
+
+.sprite-vk {
+    width: 47px;
+    height: 47px;
+    background-position: -5px -119px;
+}
+
+.sprite-vk-hover {
+    width: 47px;
+    height: 47px;
+    background-position: -62px -119px;
+}
