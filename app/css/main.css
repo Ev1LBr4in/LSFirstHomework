@@ -78,6 +78,7 @@ body{
 
 /* LEFT BLOCK */
 
+/* Navigation */
 .sidebar{
 	width: 250px;
 }
@@ -86,7 +87,7 @@ body{
 	overflow: hidden;
 	background: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 26px;
+	margin-bottom: 25px;
 }
 .navigation .navigation-list{
 	list-style: none;
@@ -124,6 +125,71 @@ body{
 	margin-left: 16px;
 	padding: 20px 0px;
 }
+
+.navigation .navigation-link:hover{
+	color: #3ba8c0;
+}
+
+/* Contacts */
+
+.contacts{
+	overflow: hidden;
+	border-radius: 4px;
+	background: #CCC;
+	display: block;
+}
+
+.contacts-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.contacts .contacts-link{
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-left: 22px;
+}
+
+.contacts .contacts-header{
+	font-family: 'fira_sansbook';
+	color: #fff;
+	margin: 0;
+	font-size: 21px;
+	padding-top: 7px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-weight: normal;
+}
+
+
+
+.contacts .contacts-item{
+	padding-left: 21px;
+}
+
+.contacts .contacts-link:hover{
+	text-decoration: underline;
+}
+
+.contacts .contacts-item.header{background: #3ba8c0;}
+.contacts .contacts-item.mymail{background: #41b9d4;}
+.contacts .contacts-item.myphone{background: #48cbe8;}
+.contacts .contacts-item.myskype{background: #51daf8;}
+.contacts .contacts-link.mymail{background: url(../images/mail.png) no-repeat center left;}
+.contacts .contacts-link.myphone{background:  url(../images/phone.png) no-repeat center left;}
+.contacts .contacts-link.myskype{background:  url(../images/skype.png) no-repeat center left;}
+
+
+
 
 /* RIGHT BLOCK */
 
