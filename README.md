@@ -1,7 +1,8 @@
 > Как установить мой проект
 
-1. git clone --- site
-2. cd site
-3. bower i
-4. npm i
-5. gulp
+1. Открыть консоль
+2. Выполнить команду https://github.com/Ev1LBr4in/LSFirstHomework
+3. Прейти в папку с проектом выполнив в команду cd LSFirestHomework 
+4. Выполнить команду npm install
+5. Выполнить команду bower install
+6. Выполнить команду gulp

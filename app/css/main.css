@@ -135,8 +135,9 @@ body{
 .contacts{
 	overflow: hidden;
 	border-radius: 4px;
-	background: #CCC;
+	font-style: normal;
 	display: block;
+
 }
 
 .contacts-list{
@@ -153,7 +154,7 @@ body{
 	font-size: 17px;
 	color: #fff;
 	text-decoration: none;
-	padding-left: 30px;
+	padding-left: 39px;
 	padding-top: 6px;
 	padding-bottom: 6px;
 	margin-left: 22px;
