@@ -65,7 +65,7 @@ body{
 	height: 100%;
 	width: 100%;
 	text-indent: -9999px;
-	background: url(../images/spritesheet.png) no-repeat;
+	background: url(../images/SocIcons-sprite.png) no-repeat;
 }
 .socials-list .socials-link.vk{background-position: -5px -119px;}
 .socials-list .socials-link.fb{background-position: -5px -5px;}
@@ -144,6 +144,7 @@ body{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	background: #3ba8c0;
 }
 
 
@@ -167,7 +168,7 @@ body{
 	font-size: 21px;
 	padding-top: 7px;
 	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 21px;
 	font-weight: normal;
 }
 
@@ -181,7 +182,6 @@ body{
 	text-decoration: underline;
 }
 
-.contacts .contacts-item.header{background: #3ba8c0;}
 .contacts .contacts-item.mymail{background: #41b9d4;}
 .contacts .contacts-item.myphone{background: #48cbe8;}
 .contacts .contacts-item.myskype{background: #51daf8;}
@@ -231,19 +231,20 @@ body{
 
 .lock .lock-inner{
 	display: block;
-	height: 40px;
+	height: 32px;
+	width: 20px;
 	font-family: 'fira_sansbook';
 	font-size: 16px;
 	line-height: 2.2;
 	color: #4a545d;
 	text-decoration: none;
-	background: url(../images/lock.png) no-repeat;
+	background: url(../images/lock-sprite.png) 0 0 no-repeat;
 	padding-left: 24px;
 }
 
 .lock .lock-inner:hover{
 	text-decoration: underline;
-	background: url(../images/lock-hover.png) no-repeat;
+	background-position: 0 -41px;
 }
 
 
