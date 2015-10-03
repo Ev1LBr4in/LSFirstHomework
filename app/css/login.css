@@ -1,0 +1,64 @@
+.loginbox{
+	width: 590px;
+	background: #eff3f7;
+	margin: 20% auto;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.30); 
+	text-align: center;
+	padding-bottom: 24px;
+}
+
+.loginbox .loginbox-header {
+	display: block;
+	width: 100%;
+	background: #48cbe8;
+	color: #FFF;
+	font-size: 40px;
+	font-family: 'fira_sansbook';
+	font-weight: normal;
+	text-align: center;
+	padding: 15px 0;
+	margin: 0;
+	border-bottom: #67dffa solid 15px;
+	margin-bottom: 14px;	
+}
+
+.titles{
+	display: block;
+	font-family: "fira_sanslight";
+	font-size: 36px;
+	color: #959aa8;
+}
+
+.text-inputs{
+	display: block;
+	margin: auto;
+	font-family: "fira_sanslight";
+	border: #48cbe8 solid 1px;
+	color: #48cbe8;
+	font-size: 17px;
+	height: 63px;
+	padding: 0px 19px;
+	width: 65%;
+	border-radius: 3px;
+	margin-bottom: 10px; 
+}
+
+   .text-inputs::-webkit-input-placeholder  {
+    color: #48cbe8;
+   }
+
+.submit-button{
+	color: #FFF; 
+	background: #48cbe8;
+	border: none;
+	border-radius: 7px;
+	min-width: 226px;
+	box-shadow: 0px 4px 1px #3ba8c0;
+	display: block;
+	margin: auto;
+	font-size: 36px;
+	margin-top: 30px;
+
+}
