@@ -62,3 +62,12 @@
 	margin-top: 30px;
 
 }
+
+.submit-button:active{
+	background: #3ba8c0;
+	outline: none;
+}
+
+.submit-button:focus{
+	outline: none;
+}

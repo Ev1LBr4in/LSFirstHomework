@@ -19,6 +19,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/add_project.css">
 	<!-- Modernizr -->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -113,12 +114,49 @@
 									<p class="gallery-item-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 								</a>
 							</li>
-							<li class="gallery-item">
-								<div class="additem"></div>
+					<!-- POPUPWINDOW START -->
+						<!-- Button start -->
+							<li id="addproj-button" class="gallery-item">
+								<button class="additem"></button>
 							</li>
+							</ul>
+						<!-- Button end -->
+						<!-- Window start -->
+					<section id="addproj" class="addprojbox">
+					<div class="addprojbox-header clearfix"><h2 class="addprojbox-header-title pull-left">Добавление проекта</h2><p id="addproj-close" class="addprojbox-header-closebutton pull-right"></p></div>
+					<div class="form-wrap">
+					<form action="">
+
+						<label for="name" class="addproj-label">Название проетка</label>
+						<input type="text" name id="name" class="addproj-input" placeholder="Введите название">
+
+						<label for="addfile-input" class="addproj-label">Картинка проекта</label>
+
+						<label class="fake-input" for="addfile-input">
+						<p id="addfile-text" class="addfile-text">Загрузите изображение</p>
+						<span class="addfile-icon"><span>
+						<input class="addproj-inputfiles" type="file" name="projimg" id="addfile-input" class="addproj-input">
+						</label>
+
+						<label for="link" class="addproj-label">URL проекта</label>
+						<input placeholder="Добавьте ссылку" class="addproj-input" type="text" name id="link" class="link">
 
 
-						</ul>
+						<label for="projdisc" class="addproj-label">Описание</label>
+						<textarea class="addproj-input  text-area" name="projdisc" id="projdisc" placeholder="Пара слов о Вашем проекте"></textarea>
+
+
+						<input class="addbutton" type="submit" value="Добавить">	
+					</form>
+					</div>
+				</section>					
+						<!-- window end-->
+
+
+
+					<!-- POPUPWINDOW END -->
+
+						
 					</div>
 				</section>
 			<!-- GALLERY END -->	
@@ -143,5 +181,6 @@
 	<!-- JS -->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
 </body>
 </html>

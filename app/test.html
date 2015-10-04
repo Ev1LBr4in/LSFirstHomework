@@ -1,25 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
- <meta charset="utf-8">
-  <title>::-webkit-input-placeholder</title>
-  <style>
-   body { background: #053f38; }
-   input[type="search"] { 
-    border: 1px solid #98baba; /* Параметры рамки */
-    background: transparent; /* Прозрачный фон */
-    padding: 1px 4px; /* Поля вокруг текста */
-    color: #fff; /* Цвет текста */
-   }
-   input[type="search"]::-webkit-input-placeholder {
-    color: #ffd595; /* Цвет подсказывающего текста */
-   }
-  </style>
- </head>
- <body>
-  <form>
-   <p><input type="search" placeholder="Поиск по сайту" name="q">
-   <input type="submit" value="Найти"></p>
-  </form>
- </body>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Первая домашняя работа</title>
+  <!-- SEO -->
+  <meta name="description" content="first_homework">
+  <meta name="keywords" content="first_homework">
+  <meta name="author" content="Evgeny Garevskikh">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- FONTS -->
+  <link rel="stylesheet" href="fonts/fira.css">
+  <link rel="stylesheet" href="fonts/Proxima_nova.css">
+  <!-- bower CSS -->
+  <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about-me.css">
+  <!-- Modernizr -->
+  <script src="bower/modernizer/modernizr.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="browserhappy">Вы используете <strong>устаревший</strong>браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a>его</p>
+  <![endif]-->
+
+  <div class="wrapper">
+    <div class="main-content">
+  <!-- HEADER START -->
+      <header class="page-header header-line">
+        <div class="container-big">
+          <!-- logo -->
+          <a href="index.html" class="header-logo-link">
+          <img src="images/logo.png" alt="logo" class="logo-img">
+          <span class="header-logo-text">Сайт портфолио</span>
+          </a>
+          <!-- social icons -->
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link vk" href="https://vk.com/id705817" target="_blank">vk.com</a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link tw" href="https://twitter.com/" target="_blank">twitter.com</a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link fb" href="https://www.facebook.com" target="_blank">facebook.com</a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link gt" href="https://github.com/Ev1LBr4in" target="_blank">github.com</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+  <!-- HEADER END -->
+      <div class="container">
+
+  <!-- LEFT BLOCK START -->
+        <aside class="sidebar pull-left">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item current"><a href="index.html" class="navigation-link">Обо мне</a></li>
+              <li class="navigation-item"><a href="portfolio.html" class="navigation-link">Мои работы</a></li>
+              <li class="navigation-item"><a href="feedback.html" class="navigation-link">Связаться со мной</a></li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <ul class="contacts-list">
+              <div class="contacts-header">Контакты</div>
+              <li class="contacts-item mymail"><a href="mailto:ivgen44@gmail.com" class="contacts-link mymail">ivgen44@gmail.com</a></li>
+              <li class="contacts-item myphone"><a href="tel:+79232483852" class="contacts-link myphone">+7-923-248-38-52</a></li>
+              <li class="contacts-item myskype"><a href="skype:ivgen44" class="contacts-link myskype">ivgen44</a></li>
+            </ul>
+          </address>
+        </aside>
+  <!-- LEFT BLOCK END -->
+
+      <!-- VARIABLE CONTENT START -->
+
+      <div class="variable-content">
+      <!-- ABOUT START -->  
+        <section class="aboutbox">
+          <h2 id="test" class="aboutbox-header">Основная информация</h2>
+          <div class="aboutbox-body clearfix">
+            <div class="image-wrap">
+              <div class="avatar-box"><img src="images/avatar.png" alt="Гаревских Евгений" class="avatar"></div>
+            </div>
+          <div class="worksheet-wrap pull-right">
+            <ul class="worksheet-list">
+              <li class="worksheet-item clearfix">
+                <div class="worksheet-what">Меня зовут:</div>
+                <div class="worksheet-info">Евгений Гаревских</div>
+              </li>
+              <li class="worksheet-item clearfix">
+                <div class="worksheet-what">Мой возраст:</div>
+                <div class="worksheet-info">28 лет</div>
+              </li>
+              <li class="worksheet-item clearfix">
+                <div class="worksheet-what">Мой город:</div>
+                <div class="worksheet-info">Новосибирск, Россия</div>
+              </li>
+              <li class="worksheet-item clearfix">
+                <div class="worksheet-what">Моя специализация:</div>
+                <div class="worksheet-info">FRONTEND разработчик</div>
+              </li>
+              <li class="worksheet clearfix">
+                <div class="worksheet-what">Ключевые навыки:</div>
+                <div class="worksheet-info skills">
+                  <ul class="skills-list">
+                    <li class="skills-item">html</li>
+                    <li class="skills-item">css</li>
+                    <li class="skills-item">javascript</li>
+                    <li class="skills-item">gulp</li>
+                    <li class="skills-item">git</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </section>
+        <!-- ABOUT END -->  
+        <!-- WORK START -->
+        <section class="aboutbox">
+          <h2 class="aboutbox-header">Опыт работы</h2>
+          <ul class="aboutbox-list">
+              <li class="aboutbox-item icon-workcase clearfix">
+                <div class="where">Компьютерный клуб - системный администратор</div>
+                <div class="period">2006 - 2007</div>
+              </li>
+              <li class="aboutbox-item icon-workcase clearfix">
+                <div class="where">Vsemayki.ru - Менедрежр интернет магазина</div>
+                <div class="period">2007 - 2008</div>
+              </li>
+              <li class="aboutbox-item icon-workcase clearfix">
+                <div class="where">ООО "Travelers Coffee" - Администратор сайта</div>
+                <div class="period">2011 - 2012</div>
+              </li>
+              <li class="aboutbox-item icon-workcase clearfix">
+                <div class="where">ООО "Фабрика потолков" - Интернет маркетолог</div>
+                <div class="period">2012 - 2013</div>
+              </li>
+            </ul> 
+        </section>
+        <!-- WORK END -->
+        <!-- STUDY START -->
+        <section class="aboutbox">
+          <h2 class="aboutbox-header">Образование</h2>
+          <ul class="aboutbox-list">
+            <li class="aboutbox-item icon-stud clearfix">
+              <div class="where">Незаконченное высшее. НГТУ</div>
+              <div class="period">2004 - 2008</div>
+            </li>
+            <li class="aboutbox-item icon-course clearfix">
+              <div class="where">Курсы LoftSchool</div>
+              <div class="period">2015 - по настоящее время</div>
+            </li>
+          </ul> 
+        </section>
+        <!-- STUDY END -->
+      </div>
+      <!-- VARIABLE CONTENT END -->
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER START -->
+  <footer class="page-footer footer-line">
+    <div class="container">
+      <div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+      <div class="copyright">© 2015 Это сайт Гаревских Евгения, пожалуйста, не копируйте и не воруйте его.</div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- JS -->
+  <script src="bower/jquery/dist/jquery.js"></script>
+  <script src="js/main.js"></script>
+
+    <script>
+        $(window).resize(function(e) {
+          $("#test").text("width: " + window.innerWidth + ", Height:" + window.innerHeight);
+      });
+
+
+
+
+
+
+
+
+  </script>
+</body>
 </html>

@@ -1,0 +1,133 @@
+.addprojbox{
+	width: 362px;
+	background: #eff3f7;
+	margin: 20% auto;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.30); 
+	text-align: left;
+	padding-bottom: 24px;
+	display: none;
+}
+
+.addprojbox .addprojbox-header {
+	display: block;
+	width: 97%;
+	background: #48cbe8;
+	color: #FFF;
+	font-size: 25px;
+	font-family: 'fira_sansregular';
+	font-weight: normal;
+	text-align: left;
+	padding: 5px 0px 2px 12px;
+	margin: 0;
+	border-bottom: #67dffa solid 8px;
+	margin-bottom: 5px;	
+}
+
+.addprojbox .addprojbox-header-title {
+color: #FFF;
+font-size: 25px;
+font-family: 'fira_sansregular';
+font-weight: normal;
+margin: 0;
+padding: 0;
+}
+
+.addprojbox .addprojbox-header-closebutton{
+	background: url(../images/addfileclose.png);
+	width: 25px;
+	height: 25px;
+	margin: 5px 13px 0 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+
+.form-wrap{
+	display: block;
+	width: 320px;
+	margin: auto;
+}
+
+.addproj-label{
+	display: block;
+	font-family: "fira_sansbook";
+	font-size: 17px;
+	color: #959aa8;
+}
+
+.addproj-input{
+	display: block;
+	margin: auto;
+	font-family: "fira_sanslight";
+	border: #48cbe8 solid 1px;
+	color: #48cbe8;
+	font-size: 13px;
+	width: 97%;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	padding: 10px 0 10px 7px; 
+}
+
+.addproj-input::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+
+.addproj-input.text-area{
+	resize: none;
+	padding-right: 7px;
+	width: 95%;
+	min-height: 90px;
+}
+
+
+.addbutton{
+	color: #FFF; 
+	border: none;
+	border-radius: 7px;
+	margin: auto;
+	display: block;
+	font-size: 19px;
+	padding: 0 28px;
+	background: #48cbe8;
+	box-shadow: 0px 4px 1px #3ba8c0;
+	margin-top: 14px;
+}
+
+
+.fake-input{
+	display: block;
+	cursor: pointer;
+	border: #48cbe8 solid 1px;
+	color: #48cbe8;
+	background: #FFF;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 5px;
+
+}
+
+
+.addfile-text{
+	width: 60%;
+	float: left;
+	margin: 0;
+	margin-top: 11px;
+	margin-left: 5px;
+	font-family: "fira_sanslight";
+	color: #48cbe8;
+	font-size: 13px;
+}
+
+.addfile-icon{
+	display: block;
+	background: #48cbe8 url(../images/addfileimg.png) no-repeat center center;
+	height: 41px;
+	width: 52px;
+	float: right;
+}
+
+.addproj-inputfiles{
+	display: none;
+}

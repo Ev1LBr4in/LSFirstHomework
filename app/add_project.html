@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/add_project.css">
 	<!-- Modernizr -->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -34,15 +34,33 @@
 
 			<!-- VARIABLE CONTENT START -->
 
-				<section class="loginbox">
-					<h2 class="loginbox-header">Авторизируйтесь</h2>
+				<section class="addprojbox">
+					<div class="addprojbox-header clearfix"><h2 class="addprojbox-header-title pull-left">Добавление проекта</h2><p class="addprojbox-header-closebutton pull-right"></p></div>
+					<div class="form-wrap">
 					<form action="">
-						<label class="titles" for="login">Логин</label>
-						<input class="text-inputs" type="text" name="login" id="login" placeholder = "Введите логин">
-						<label class="titles" for="password">Пароль</label>
-						<input class="text-inputs" type="password" name="password" id="password" placeholder = "Введите пароль">
-						<input class="submit-button" type="submit" value="Войти">
+
+						<label for="name" class="addproj-label">Название проетка</label>
+						<input type="text" name id="name" class="addproj-input" placeholder="Введите название">
+
+						<label for="projimg" class="addproj-label">Картинка проекта</label>
+
+						<label class="fake-input" for="projimg">
+						<p class="addfile-text">Загрузите изображение</p>
+						<span class="addfile-icon"><span>
+						<input class="addproj-inputfiles" type="file" name="projimg" id="projimg" class="addproj-input">
+						</label>
+
+						<label for="link" class="addproj-label">URL проекта</label>
+						<input placeholder="Добавьте ссылку" class="addproj-input" type="text" name id="link" class="link">
+
+
+						<label for="projdisc" class="addproj-label">Описание</label>
+						<textarea class="addproj-input  text-area" name="projdisc" id="projdisc" placeholder="Пара слов о Вашем проекте"></textarea>
+
+
+						<input class="addbutton" type="submit" value="Добавить">	
 					</form>
+					</div>
 				</section>
 				<!-- ABOUT END -->	
 

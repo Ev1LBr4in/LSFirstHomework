@@ -98,3 +98,17 @@
 	background: #849db5;
 	box-shadow: 0px 4px 1px #687b8f;
 }
+
+.button.send:active{
+    background-color: #3ba8c0;
+    outline: none;
+}
+
+.button.clean:active{
+    background-color: #687b8f;
+    outline: none; 
+}
+
+.button:focus{
+	outline: none; 
+}

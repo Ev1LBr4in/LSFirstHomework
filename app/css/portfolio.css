@@ -147,4 +147,7 @@
 	background: url(../images/word-add.png) #edf8fc center center no-repeat;
 }
 
-
+.additem:active,
+.additem:focus{
+	outline: none;
+}
