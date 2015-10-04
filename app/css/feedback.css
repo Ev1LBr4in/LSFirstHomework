@@ -1,0 +1,100 @@
+.feedbackbox{
+	background: #eff3f7;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 26px;
+	width: 650px;
+	float: right;
+	padding-bottom: 45px;
+}
+
+.feedbackbox .feedbackbox-header{
+	display: block;
+	width: 100%;
+	background: #48cbe8;
+	color: #FFF;
+	font-size: 27px;
+	font-family: 'fira_sansbook';
+	font-weight: normal;
+	text-align: center;
+	padding: 40px 0;
+	margin: 0;
+	border-bottom: #67dffa solid 17px;
+	margin-bottom: 39px;
+
+}
+
+.feedbackform-wrap{
+	width: 429px;
+	margin: auto;
+}
+
+.inputs-wrap{
+	display: inline-block;
+	margin:0px 10px; 
+	margin-bottom: 10px;
+}
+.feedbackform-label {
+	display: block;
+	font-family: "fira_sanslight";
+	font-size: 19px;
+	color: #959aa8;
+}
+.feedbackform-input{
+	display: block;
+	border: #48cbe8 solid 1px;
+	color: #48cbe8;
+	border-radius: 5px;
+	width: 176px;
+	font-family: "fira_sanslight";
+	font-size: 13px;
+	padding: 9px 0px 9px 13px
+
+}
+
+ .feedbackform-input::-webkit-input-placeholder{
+	color: #48cbe8;
+ }
+
+.feedbackform-input.text-area{
+	width: 382px;
+	resize: none;
+	padding-right: 9px;
+	height: 162px; 
+
+}
+
+.capcha{
+	border: #48cbe8 solid 1px;
+	border-radius: 5px;
+	width: 192px;
+	height: 80px;
+	background: #FFF;
+}
+
+.capcha-input{
+	margin: 23px 5px;
+	padding: 4px 0px 4px 13px;
+}
+
+.button{
+	color: #FFF; 
+	border: none;
+	border-radius: 7px;
+
+	display: block;
+	font-size: 19px;
+	margin: 0 13px;
+	margin-top: 10px;
+	padding: 0 24px;
+}
+
+.button.send{
+	background: #48cbe8;
+	box-shadow: 0px 4px 1px #3ba8c0;
+}
+
+.button.clean{
+	background: #849db5;
+	box-shadow: 0px 4px 1px #687b8f;
+}

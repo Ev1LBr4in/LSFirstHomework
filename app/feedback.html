@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/feedback.css">
 	<!-- Modernizr -->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -62,8 +62,8 @@
 					<nav class="navigation">
 						<ul class="navigation-list">
 							<li class="navigation-item"><a href="index.html" class="navigation-link">Обо мне</a></li>
-							<li class="navigation-item current"><a href="portfolio.html" class="navigation-link">Мои работы</a></li>
-							<li class="navigation-item"><a href="feedback.html" class="navigation-link">Связаться со мной</a></li>
+							<li class="navigation-item"><a href="portfolio.html" class="navigation-link">Мои работы</a></li>
+							<li class="navigation-item current"><a href="feedback.html" class="navigation-link">Связаться со мной</a></li>
 						</ul>
 					</nav>
 					<address class="contacts">
@@ -77,52 +77,41 @@
 				</aside>
 	<!-- LEFT BLOCK END -->
 
-			<!-- VARIABLE CONTENT START --> 
+			<!-- VARIABLE CONTENT START -->
 
 			<div class="variable-content">
-			<!-- GALLERY START -->	
-				<section class="gallerybox">
-					<h2 class="gallerybox-header">Мои работы</h2>
-					<div class="gallerybox-body">
-						<ul class="gallery-list">
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site.ru</p></div><img class="gallery-img" src="images/site1.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 1 превью 2 строки....</p>
-								</a>
-							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">Тут ккое то длинное имя</p></div><img class="gallery-img" src="images/site2.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site2.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 2 превью 2 строки....</p>
-								</a>
-							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site3.ru</p></div><img class="gallery-img" src="images/site3.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site3.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 3 превью 2 строки....</p>
-								</a>
-							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site4.ru</p></div><img class="gallery-img" src="images/site4.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site4.ru</h3>
-									<p class="gallery-item-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								</a>
-							</li>
-							<li class="gallery-item">
-								<div class="additem"></div>
-							</li>
+			<!-- ABOUT START -->	
+				<section class="feedbackbox">
+					<h2 class="feedbackbox-header">У вас интересный проект? Напишите мне.</h2>
+					<div class="feedbackform-wrap">
+					<form action="">
+
+						<div class="inputs-wrap">
+						<label class="feedbackform-label" for="name">Имя</label>
+						<input class="feedbackform-input" type="text" name="name" id="name" placeholder="Как к вам обращатся"></div>
+
+						<div class="inputs-wrap">
+						<label class="feedbackform-label" for="Email">Email</label>
+						<input class="feedbackform-input" type="text" name="Email" id="Email" placeholder="Куда вам писать"></div>
+
+						<div class="inputs-wrap">
 
 
-						</ul>
+						<label class="feedbackform-label" for="message">Сообщение</label>
+						<textarea class="feedbackform-input text-area" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea></div>
+						
+						<div class="inputs-wrap clearfix">
+							<label for="capcha" class="feedback-label">Введите код, указанный на картинке</label>
+							<div class="capcha pull-left"></div>
+							<input class="feedbackform-input capcha-input pull-right" type="text" name="capcha" id="capcha" placeholder="Введите код">
+						</div>
+
+						<input class="button send pull-left" type="submit" value="Отправить">
+						<input class="button clean pull-right" type="submit" value="Очистить">
+					</form>
 					</div>
 				</section>
-			<!-- GALLERY END -->	
-				
+				<!-- ABOUT END -->	
 			</div>
 			<!-- VARIABLE CONTENT END -->
 
@@ -132,12 +121,12 @@
 	</div>
 
 	<!-- FOOTER START -->
-		<footer class="page-footer footer-line">
+	<footer class="page-footer footer-line">
 		<div class="container">
 			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
 			<div class="copyright">© 2015 Это сайт Гаревских Евгения, пожалуйста, не копируйте и не воруйте его.</div>
 		</div>
-		</footer>
+	</footer>
 	<!-- FOOTER END -->
 
 	<!-- JS -->

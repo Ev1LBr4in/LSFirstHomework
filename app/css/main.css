@@ -218,8 +218,8 @@ body{
 .page-footer .copyright{
 	margin-right: 0 180px;
 	padding-top: 7px;
-	text-align: center;
 	font-size: 13px;
+	text-align: center;
 }
 
 /* LOGIN */
@@ -282,9 +282,9 @@ body{
 
 .header-line:after, .footer-line:before{
 content: "";
-display: block;
 background: transparent linear-gradient(to right, #FFF 0%, #1f687c 50%, #1f687c 50%, #FFF 100%) repeat scroll 0% 0%;
 height: 3px;
+display: block;
 }
 
 

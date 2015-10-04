@@ -2,3 +2,4 @@ app/bower
 node_modules
 dist
 template
+test.html
