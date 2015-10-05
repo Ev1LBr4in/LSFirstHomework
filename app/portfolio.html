@@ -81,43 +81,72 @@
 			<!-- VARIABLE CONTENT START --> 
 
 			<div class="variable-content">
-			<!-- GALLERY START -->	
-				<section class="gallerybox">
-					<h2 class="gallerybox-header">Мои работы</h2>
-					<div class="gallerybox-body">
-						<ul class="gallery-list">
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site.ru</p></div><img class="gallery-img" src="images/site1.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 1 превью 2 строки....</p>
+
+			<!-- PORTFOLIO START -->	
+
+				<section class="portfoliobox">
+					<h2 class="portfoliobox-header">Мои работы</h2>
+
+					<div class="portfoliobox-body">
+
+						<ul class="portfolio-list">
+
+							<li class="portfolio-item">
+								<a class = "gallery-link" href="#" target="_blank">
+									<div class="gallery-img-wrap">
+										<div class="hovereffect_title">
+											<p class="title-text">www.site.ru</p>
+										</div>
+										<img class="gallery-img" src="images/site1.jpg" alt="">
+									</div>
+									<h3 class="portfolio-item-title">www.site.ru</h3>
+									<p class="portfolio-item-descr">Информация о проекте 1 превью 2 строки....</p>
 								</a>
 							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">Тут ккое то длинное имя</p></div><img class="gallery-img" src="images/site2.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site2.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 2 превью 2 строки....</p>
+
+							<li class="portfolio-item">
+								<a class = "gallery-link" href="#" target="_blank">
+									<div class="gallery-img-wrap">
+										<div class="hovereffect_title">
+											<p class="title-text">www.site2.ru</p>
+										</div>
+										<img class="gallery-img" src="images/site2.jpg" alt="">
+									</div>
+									<h3 class="portfolio-item-title">www.site2.ru</h3>
+									<p class="portfolio-item-descr">Информация о проекте 2 превью 2 строки....</p>
 								</a>
 							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site3.ru</p></div><img class="gallery-img" src="images/site3.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site3.ru</h3>
-									<p class="gallery-item-descr">Информация о проекте 3 превью 2 строки....</p>
+
+							<li class="portfolio-item">
+								<a class = "gallery-link" href="#" target="_blank">
+									<div class="gallery-img-wrap">
+										<div class="hovereffect_title">
+											<p class="title-text">www.site3.ru</p>
+										</div>
+										<img class="gallery-img" src="images/site3.jpg" alt="">
+									</div>
+									<h3 class="portfolio-item-title">www.site3.ru</h3>
+									<p class="portfolio-item-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio vero </p>
 								</a>
 							</li>
-							<li class="gallery-item">
-								<a class = "gallery-link" href="#">
-									<div class="gallery-img-wrap"><div class="hovereffect_title"><p class="title-text">www.site4.ru</p></div><img class="gallery-img" src="images/site4.jpg" alt=""></div>
-									<h3 class="gallery-item-title">www.site4.ru</h3>
-									<p class="gallery-item-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+							<li class="portfolio-item">
+								<a class = "gallery-link" href="#" target="_blank">
+									<div class="gallery-img-wrap">
+										<div class="hovereffect_title">
+											<p class="title-text">www.site4.ru</p>
+										</div>
+										<img class="gallery-img" src="images/site4.jpg" alt="">
+									</div>
+									<h3 class="portfolio-item-title">www.site4.ru</h3>
+									<p class="portfolio-item-descr">Lorem ipsum dolor sit am</p>
 								</a>
 							</li>
+
 					<!-- POPUPWINDOW START -->
 						<!-- Button start -->
-							<li id="addproj-button" class="gallery-item">
-								<button class="additem"></button>
+							<li id="addproj-button" class="portfolio-item">
+								<button class="additem"  type="button" value="">Добавить проект</button>
 							</li>
 							</ul>
 						<!-- Button end -->
@@ -128,18 +157,18 @@
 					<form action="">
 
 						<label for="name" class="addproj-label">Название проетка</label>
-						<input type="text" name id="name" class="addproj-input" placeholder="Введите название">
+						<input class="addproj-input" type="text" name="name" id="name"  placeholder="Введите название">
 
 						<label for="addfile-input" class="addproj-label">Картинка проекта</label>
 
 						<label class="fake-input" for="addfile-input">
 						<p id="addfile-text" class="addfile-text">Загрузите изображение</p>
-						<span class="addfile-icon"><span>
-						<input class="addproj-inputfiles" type="file" name="projimg" id="addfile-input" class="addproj-input">
+						<span class="addfile-icon"></span>
+						<input class="addproj-inputfiles addproj-input" type="file" name="projimg" id="addfile-input">
 						</label>
 
 						<label for="link" class="addproj-label">URL проекта</label>
-						<input placeholder="Добавьте ссылку" class="addproj-input" type="text" name id="link" class="link">
+						<input placeholder="Добавьте ссылку" class="addproj-input" type="text" name="link" id="link">
 
 
 						<label for="projdisc" class="addproj-label">Описание</label>
@@ -159,7 +188,7 @@
 						
 					</div>
 				</section>
-			<!-- GALLERY END -->	
+			<!-- PORTFOLIO END -->	
 				
 			</div>
 			<!-- VARIABLE CONTENT END -->
@@ -172,7 +201,7 @@
 	<!-- FOOTER START -->
 		<footer class="page-footer footer-line">
 		<div class="container">
-			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+			<div class="lock"><a href="login.html" class="lock-inner">Войти</a></div>
 			<div class="copyright">© 2015 Это сайт Гаревских Евгения, пожалуйста, не копируйте и не воруйте его.</div>
 		</div>
 		</footer>

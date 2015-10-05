@@ -1,114 +1,128 @@
 .feedbackbox{
+	float: right;
+	width: 650px;
+	margin-bottom: 26px;
+	overflow: hidden;
+
 	background: #eff3f7;
 	border-radius: 4px;
-	overflow: hidden;
-	margin-bottom: 26px;
-	width: 650px;
-	float: right;
 	padding-bottom: 45px;
 }
 
 .feedbackbox .feedbackbox-header{
 	display: block;
 	width: 100%;
-	background: #48cbe8;
-	color: #FFF;
+	padding: 40px 0;
+	margin: 0 0 39px 0;
+
+	color: #ffffff;
 	font-size: 27px;
 	font-family: 'fira_sansbook';
 	font-weight: normal;
 	text-align: center;
-	padding: 40px 0;
-	margin: 0;
-	border-bottom: #67dffa solid 17px;
-	margin-bottom: 39px;
 
+	background: #48cbe8;
+	border-bottom: #67dffa solid 17px;
 }
 
-.feedbackform-wrap{
+/* Form */
+
+.feedbackbox .feedbackform-wrap{
 	width: 429px;
 	margin: auto;
 }
 
-.inputs-wrap{
+.feedbackbox .feedbackform-item{
 	display: inline-block;
-	margin:0px 10px; 
-	margin-bottom: 10px;
+	margin:0 10px 10px 10px; 
 }
-.feedbackform-label {
+
+.feedbackbox .feedbackform-label {
 	display: block;
+
 	font-family: "fira_sanslight";
 	font-size: 19px;
 	color: #959aa8;
 }
-.feedbackform-input{
+
+.feedbackbox .feedbackform-input{
 	display: block;
-	border: #48cbe8 solid 1px;
-	color: #48cbe8;
-	border-radius: 5px;
 	width: 176px;
+	padding: 9px 0px 9px 13px;
+
+	color: #48cbe8;
 	font-family: "fira_sanslight";
 	font-size: 13px;
-	padding: 9px 0px 9px 13px
 
+	border: #48cbe8 solid 1px;
+	border-radius: 3px;
 }
 
- .feedbackform-input::-webkit-input-placeholder{
+.feedbackbox .feedbackform-input::-webkit-input-placeholder{
 	color: #48cbe8;
  }
 
-.feedbackform-input.text-area{
+.feedbackbox .feedbackform-input.text-area{
 	width: 382px;
 	resize: none;
 	padding-right: 9px;
 	height: 162px; 
-
 }
 
-.capcha{
-	border: #48cbe8 solid 1px;
-	border-radius: 5px;
+/* Captcha */
+
+.feedbackbox .captcha{
 	width: 192px;
 	height: 80px;
-	background: #FFF;
+
+	border: #48cbe8 solid 1px;
+	border-radius: 5px;
+	background: #ffffff;
 }
 
-.capcha-input{
-	margin: 23px 5px;
-	padding: 4px 0px 4px 13px;
+.feedbackbox .captcha-input{
+	width: 181px;
+	padding: 4px 0px 4px 8px;
+	margin: 19px 0 19px 20px;
 }
 
-.button{
-	color: #FFF; 
-	border: none;
-	border-radius: 7px;
+/* Buttons */
 
+.feedbackbox .button{
 	display: block;
-	font-size: 19px;
 	margin: 0 13px;
 	margin-top: 10px;
 	padding: 0 24px;
+	
+	color: #ffffff; 
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+
+	border: none;
+	border-radius: 7px;
 }
 
-.button.send{
+.feedbackbox .button:focus{
+	outline: none; 
+}
+
+.feedbackbox .button.send{
 	background: #48cbe8;
-	box-shadow: 0px 4px 1px #3ba8c0;
+	box-shadow: 0 4px 1px #3ba8c0;
 }
 
-.button.clean{
-	background: #849db5;
-	box-shadow: 0px 4px 1px #687b8f;
-}
-
-.button.send:active{
+.feedbackbox .button.send:active{
     background-color: #3ba8c0;
     outline: none;
 }
 
-.button.clean:active{
+.feedbackbox .button.clean{
+	background: #849db5;
+	box-shadow: 0 4px 1px #687b8f;
+}
+
+.feedbackbox .button.clean:active{
     background-color: #687b8f;
     outline: none; 
 }
 
-.button:focus{
-	outline: none; 
-}

@@ -1,73 +1,83 @@
-.loginbox{
-	width: 590px;
-	background: #eff3f7;
-	margin: 20% auto;
-	border-radius: 4px;
+.loginbox {
 	overflow: hidden;
-	box-shadow: 0px 2px 7px rgba(0,0,0,0.30); 
-	text-align: center;
+	width: 590px;
+	margin: 20% auto;
 	padding-bottom: 24px;
+
+	text-align: center;
+
+	background: #eff3f7;
+	border-radius: 4px;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.30); 
 }
 
 .loginbox .loginbox-header {
 	display: block;
 	width: 100%;
-	background: #48cbe8;
-	color: #FFF;
+	padding: 15px 0;
+	margin: 0 0 14px 0;
+
+	color: #ffffff;
 	font-size: 40px;
 	font-family: 'fira_sansbook';
 	font-weight: normal;
 	text-align: center;
-	padding: 15px 0;
-	margin: 0;
+
+	background: #48cbe8;
 	border-bottom: #67dffa solid 15px;
-	margin-bottom: 14px;	
 }
 
-.titles{
+.loginbox .titles {
 	display: block;
+
 	font-family: "fira_sanslight";
 	font-size: 36px;
 	color: #959aa8;
 }
 
-.text-inputs{
+.loginbox .text-inputs {
 	display: block;
 	margin: auto;
+	margin-bottom: 10px; 
+	width: 65%;
+	padding: 18px 19px;
+
 	font-family: "fira_sanslight";
-	border: #48cbe8 solid 1px;
 	color: #48cbe8;
 	font-size: 17px;
-	height: 63px;
-	padding: 0px 19px;
-	width: 65%;
+
+	border: #48cbe8 solid 1px;
 	border-radius: 3px;
-	margin-bottom: 10px; 
 }
 
-   .text-inputs::-webkit-input-placeholder  {
-    color: #48cbe8;
-   }
+.loginbox .text-inputs::-webkit-input-placeholder  {
+	color: #48cbe8;
+}
 
-.submit-button{
-	color: #FFF; 
+.loginbox .submit-button,
+.loginbox .submit-button:hover{
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+	min-width: 226px;
+	
+	color: #ffffff; 
+	font-size: 36px;
+
+	outline: none;
 	background: #48cbe8;
 	border: none;
 	border-radius: 7px;
-	min-width: 226px;
-	box-shadow: 0px 4px 1px #3ba8c0;
-	display: block;
-	margin: auto;
-	font-size: 36px;
-	margin-top: 30px;
-
+	box-shadow: 0 4px 1px #3ba8c0;
 }
 
-.submit-button:active{
-	background: #3ba8c0;
+.loginbox .submit-button:active {
 	outline: none;
+	box-shadow: none;
+	margin-top: 34px;
+	margin-bottom: -4px;
 }
 
-.submit-button:focus{
+.loginbox .submit-button:focus {
 	outline: none;
 }

@@ -33,7 +33,7 @@
 			<header class="page-header header-line">
 				<div class="container-big">
 					<!-- logo -->
-					<a href="index.html" class="header-logo-link">
+					<a  class="header-logo-link" href="index.html">
 					<img src="images/logo.png" alt="logo" class="logo-img">
 					<span class="header-logo-text">Сайт портфолио</span>
 					</a>
@@ -80,50 +80,56 @@
 			<!-- VARIABLE CONTENT START -->
 
 			<div class="variable-content">
-			<!-- ABOUT START -->	
+
+			<!-- FEEDBACKBOX START -->	
 				<section class="feedbackbox">
+
 					<h2 class="feedbackbox-header">У вас интересный проект? Напишите мне.</h2>
+
+				<!-- FORM START -->	
 					<div class="feedbackform-wrap">
 					<form action="">
-
-						<div class="inputs-wrap">
-						<label class="feedbackform-label" for="name">Имя</label>
-						<input class="feedbackform-input" type="text" name="name" id="name" placeholder="Как к вам обращатся"></div>
-
-						<div class="inputs-wrap">
-						<label class="feedbackform-label" for="Email">Email</label>
-						<input class="feedbackform-input" type="text" name="Email" id="Email" placeholder="Куда вам писать"></div>
-
-						<div class="inputs-wrap">
-
-
-						<label class="feedbackform-label" for="message">Сообщение</label>
-						<textarea class="feedbackform-input text-area" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea></div>
-						
-						<div class="inputs-wrap clearfix">
-							<label for="capcha" class="feedback-label">Введите код, указанный на картинке</label>
-							<div class="capcha pull-left"></div>
-							<input class="feedbackform-input capcha-input pull-right" type="text" name="capcha" id="capcha" placeholder="Введите код">
+					<!-- Name -->
+						<div class="feedbackform-item">
+							<label class="feedbackform-label" for="name">Имя</label>
+							<input class="feedbackform-input" type="text" name="name" id="name" placeholder="Как к вам обращатся">
 						</div>
-
+					<!-- Email -->
+						<div class="feedbackform-item">
+							<label class="feedbackform-label" for="Email">Email</label>
+							<input class="feedbackform-input" type="text" name="Email" id="Email" placeholder="Куда вам писать">
+						</div>
+					<!-- Massage -->
+						<div class="feedbackform-item">
+							<label class="feedbackform-label" for="message">Сообщение</label>
+							<textarea class="feedbackform-input text-area" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+						</div>
+					<!-- Captcha -->	
+						<div class="feedbackform-item clearfix">
+							<label  class="feedbackform-label" for="captcha">Введите код, указанный на картинке</label>
+							<div class="captcha pull-left"></div>
+							<input class="feedbackform-input captcha-input pull-right" type="text" name="captcha" id="captcha" placeholder="Введите код">
+						</div>
+					<!-- Buttons -->
 						<input class="button send pull-left" type="submit" value="Отправить">
-						<input class="button clean pull-right" type="submit" value="Очистить">
+						<input class="button clean pull-right" type="reset" value="Очистить">
 					</form>
 					</div>
+				<!-- FORM END -->
 				</section>
-				<!-- ABOUT END -->	
+				<!-- FEEDBACKBOX END -->	
 			</div>
 			<!-- VARIABLE CONTENT END -->
-
 			</div>
-
 		</div>
 	</div>
 
 	<!-- FOOTER START -->
 	<footer class="page-footer footer-line">
 		<div class="container">
-			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+			<div class="lock">
+				<a href="login.html" class="lock-inner">Войти</a>
+			</div>
 			<div class="copyright">© 2015 Это сайт Гаревских Евгения, пожалуйста, не копируйте и не воруйте его.</div>
 		</div>
 	</footer>
@@ -132,5 +138,6 @@
 	<!-- JS -->
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
 </html>

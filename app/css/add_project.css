@@ -105,12 +105,14 @@ padding: 0;
 	border-radius: 3px;
 	overflow: hidden;
 	margin-bottom: 5px;
+	overflow: hidden;
+	max-height: 41px;
 
 }
 
 
 .addfile-text{
-	width: 60%;
+	width: 82%;
 	float: left;
 	margin: 0;
 	margin-top: 11px;
@@ -130,4 +132,21 @@ padding: 0;
 
 .addproj-inputfiles{
 	display: none;
+
+}.addproj-text{
+	font-size: 13px;
+	color: #3ba8c0;
+	font-family: "fira_sanslight";
+	margin-top: 58px; 
+}
+
+.addbutton:active,
+.addbutton:focus{
+	outline: none;
+}
+
+.addbutton:active{
+	margin-top: 18px;
+	margin-bottom: -4px;
+	box-shadow: none;
 }
