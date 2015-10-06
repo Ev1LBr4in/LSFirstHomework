@@ -130,12 +130,17 @@
 	min-width: 40px
 	text-align: center;
 	font-size: 14px;
-
-background: transparent linear-gradient(to top, #2E8CA2, #2E8CA2, #2E8CA2, #3BA8C0, #3BA8C0, #3BA8C0) repeat scroll 0% 0%;
-border-radius: 4px;
-font-family: 'proxima_nova_condensedSBd';
-padding: 2px 10px;
-margin-top: 4px;
+	background: transparent -webkit-linear-gradient(bottom, #2E8CA2, #2E8CA2, #2E8CA2, #3BA8C0, #3BA8C0, #3BA8C0) repeat scroll 0% 0%;
+	background: transparent -o-linear-gradient(bottom, #2E8CA2, #2E8CA2, #2E8CA2, #3BA8C0, #3BA8C0, #3BA8C0) repeat scroll 0% 0%;
+	background: transparent linear-gradient(to top, #2E8CA2, #2E8CA2, #2E8CA2, #3BA8C0, #3BA8C0, #3BA8C0) repeat scroll 0% 0%;
+	border-radius: 4px;
+	font-family: 'proxima_nova_condensedSBd';
+	padding: 2px 10px;
+	margin-top: 4px;
 }
 
+/* for ie8 */
 
+.no-cssgradients .skills-item{
+	background: #3BA8C0 url(../images/skills-items.png) repeat-x;
+}

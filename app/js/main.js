@@ -1,23 +1,19 @@
-$(document).ready(function($) {
-     console.log("я на главной странице");    
-});
+// $(document).ready(function($) {
+//      console.log("я на главной странице");    
+// });
 
 
 $(document).ready(function() {
-
 //POPUP WINDOW
 	$('#addproj-button').on('click', function(e) {
 		$('#addproj').bPopup({
-	        opacity: 0.6,
             positionStyle: 'fixed',
             speed: 450,
-            transition: 'slideBack'
+            transition: 'slideBack',
+            onClose: function(){
+            	this.find('form').trigger("reset");
+            }
 		});
-	});
-
-	$('#addproj-close').on('click', function(e){
-		var bPopup = $('#addproj').bPopup();
-		bPopup.close();
 	});
 
 // FAKE INPUT
@@ -25,8 +21,14 @@ $(document).ready(function() {
 	$('#addfile-input').change(function() {
        	var fileName = $(this).val().replace("C:\\fakepath\\", "").substring(0,40);
         $('#addfile-text').html(fileName);
-     }).change();
+     });
 
+// PLACEHOLDER
+
+
+if(!Modernizr.input.placeholder){
+$('input, textarea').placeholder();
+}
 });
 
 

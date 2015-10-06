@@ -287,6 +287,10 @@ height: 3px;
 display: block;
 }
 
+/* for ie8 */
+.no-cssgradients .header-line:after, .footer-line:before{
+	background: url(../images/line.png) no-repeat center center;
+}
 
 /* clearfix - start */
 

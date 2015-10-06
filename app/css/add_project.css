@@ -131,13 +131,8 @@ padding: 0;
 }
 
 .addproj-inputfiles{
-	display: none;
-
-}.addproj-text{
-	font-size: 13px;
-	color: #3ba8c0;
-	font-family: "fira_sanslight";
-	margin-top: 58px; 
+	position: absolute;
+	left:-9999px;
 }
 
 .addbutton:active,
