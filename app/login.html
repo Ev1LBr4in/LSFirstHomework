@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="fonts/Proxima_nova.css">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/login.css">
@@ -40,12 +41,12 @@
 
 					<h2 class="loginbox-header">Авторизируйтесь</h2>
 
-					<form action="">
+					<form id="login" action="login.php">
 						<label class="titles" for="login">Логин</label>
-						<input class="text-inputs" type="text" name="login" id="login" placeholder = "Введите логин">
+						<input class="text-inputs" type="text" name="login" id="login"  qtip-content = "Вы не ввели логин" qtip-pos = "left" placeholder = "Введите логин">
 
 						<label class="titles" for="password">Пароль</label>
-						<input class="text-inputs password" type="password" name="password" id="password" placeholder = "Введите пароль">
+						<input class="text-inputs password" type="password" name="password" id="password"  qtip-content = "Вы не введи пароль" qtip-pos = "left" placeholder = "Введите пароль">
 
 						<input class="submit-button" type="submit" value="Войти">
 					</form>
@@ -74,5 +75,8 @@
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+		<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

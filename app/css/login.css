@@ -50,6 +50,11 @@
 	border-radius: 3px;
 }
 
+.loginbox .text-inputs.error{
+	background: #fad2d1;
+	border: #f97e76 solid 1px;
+}
+
 .loginbox .text-inputs::-webkit-input-placeholder  {
 	color: #48cbe8;
 }

@@ -16,10 +16,10 @@
 	<link rel="stylesheet" href="fonts/Proxima_nova.css">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/portfolio.css">
-	<link rel="stylesheet" href="css/add_project.css">
 	<!-- Modernizr -->
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -149,33 +149,53 @@
 								<button class="additem"  type="button" value="">Добавить проект</button>
 							</li>
 							</ul>
-						<!-- Button end -->
-						<!-- Window start -->
-					<section id="addproj" class="addprojbox">
-					<div class="addprojbox-header clearfix"><h2 class="addprojbox-header-title pull-left">Добавление проекта</h2><p id="addproj-close" class="addprojbox-header-closebutton pull-right b-close"></p></div>
-					<div class="form-wrap">
-					<form action="">
+					<!-- Button end -->
+					<!-- Window start -->
+					<section id="addproj" class="addprojectbox">
+					<div class="addprojectbox-header clearfix">
+						<h2 class="addprojectbox-header-title pull-left">Добавление проекта</h2>
+						<p id="addproj-close" class="addprojectbox-header-closebutton pull-right b-close"></p>
+					</div>
 
-						<label for="name" class="addproj-label">Название проетка</label>
-						<input class="addproj-input" type="text" name="name" id="name"  placeholder="Введите название">
+					<div class="addprojectbox-successmsgboxwrap">
+					<div class="addprojectbox-successmsgbox">
+						<a href="#" class="addproject-successboxclose">&#10005</a>
+						<div class="addprojectbox-successmsgtitle">Ура!</div>
+						<div class="addprojectbox-successmsgtext">Проект успешно добавлен.</div>
+					</div>
+					</div>
 
-						<label for="addfile-input" class="addproj-label">Картинка проекта</label>
+					
+					<div class="addprojectbox-formwrap">
 
-						<label class="fake-input" for="addfile-input">
-						<p id="addfile-text" class="addfile-text">Загрузите изображение</p>
-						<span class="addfile-icon"></span>
-						<input class="addproj-inputfiles addproj-input" type="file" name="projimg" id="addfile-input">
+					<div class="addprojectbox-errormsgbox">
+						<a href="#" class="addproject-errorboxclose"> 	&#10005</a>
+						<div class="addprojectbox-errormsgtitle">Ошибка!</div>
+						<div class="addprojectbox-errormsgtext">Невозможно добавить проект.</div>
+					</div>
+
+					<form id="addprojectbox-form" class="addprojectbox-form" action="php/add_project.php" method="post" enctype="multipart/form-data" >
+
+						<label for="name" class="addprojectbox-label">Название проетка</label>
+						<input class="addprojectbox-input" type="text" name="name" id="name" qtip-content = "Вы не ввели название проекта" qtip-pos = "left" placeholder="Введите название">
+
+						<label for="addfile-input" class="addprojectbox-label">Картинка проекта</label>
+
+						<label class="addprojectbox-fileinputwrap" for="addfile-input">
+							<input type="text" id="addprojectbox-filename" class="addprojectbox-filename">
+							<span class="addprojectbox-addfileicon"></span>
+							<input class="addprojectbox-inputfiles" type="file" name="projimg" id="addfile-input">
 						</label>
 
-						<label for="link" class="addproj-label">URL проекта</label>
-						<input placeholder="Добавьте ссылку" class="addproj-input" type="text" name="link" id="link">
+						<label for="link" class="addprojectbox-label">URL проекта</label>
+						<input placeholder="Добавьте ссылку" class="addprojectbox-input" type="text" name="link" id="link"  qtip-content = "Вы не добавили ссылку на проект" qtip-pos = "left">
 
 
-						<label for="projdisc" class="addproj-label">Описание</label>
-						<textarea class="addproj-input  text-area" name="projdisc" id="projdisc" placeholder="Пара слов о Вашем проекте"></textarea>
+						<label for="projdisc" class="addprojectbox-label">Описание</label>
+						<textarea class="addprojectbox-input  text-area" name="projdisc" id="projdisc"  qtip-content = "Вы не добавили описание проекта" qtip-pos = "left" placeholder="Пара слов о Вашем проекте"></textarea>
 
 
-						<input class="addbutton" type="submit" value="Добавить">	
+						<input class="addprojectbox-subbtn" type="submit" value="Добавить">	
 					</form>
 					</div>
 				</section>					
@@ -212,5 +232,8 @@
 	<script src="js/main.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/feedback.js"></script>
 </body>
 </html>

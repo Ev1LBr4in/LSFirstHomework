@@ -52,8 +52,6 @@
 	position: relative;
 }
 
-
-
 .gallery-img-wrap{
 	display: block;
 	position: relative;
@@ -153,4 +151,255 @@
 .additem:active,
 .additem:focus{
 	outline: none;
+}
+
+
+
+/*Add Project Popup Window*/
+
+.addprojectbox{
+	display: none;
+	width: 362px;
+	margin: 20% auto;
+	padding-bottom: 24px;
+	overflow: hidden;
+
+	text-align: left;
+	
+	background: #eff3f7;
+	border-radius: 4px;
+	box-shadow: 0 2px 7px rgba(0,0,0,0.30); 
+}
+
+
+/*Add Project Header*/
+
+.addprojectbox .addprojectbox-header {
+	display: block;
+	width: 97%;
+	padding: 5px 0px 2px 12px;
+	margin: 0 0 5px 0;
+
+	text-align: left;
+	
+	background: #48cbe8;
+	border-bottom: #67dffa solid 8px;
+}
+
+.addprojectbox .addprojectbox-header-title {
+	margin: 0;
+	padding: 0;
+
+	color: #FFF;
+	font-size: 25px;
+	font-family: 'fira_sansregular';
+	font-weight: normal;
+}
+
+.addprojectbox .addprojectbox-header-closebutton{
+	margin: 5px 13px 0 0;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	
+	background: url(../images/addfileclose.png);
+	cursor: pointer;
+}
+
+/* Form */
+
+.addprojectbox .addprojectbox-formwrap{
+	display: block;
+	width: 320px;
+	margin: auto;
+}
+
+/*Error Msg START*/
+
+.addprojectbox .addprojectbox-errormsgbox{
+	display: none;
+	margin: 15px 0;
+	padding: 0px 8px;
+	overflow: hidden;
+
+	background: #fad2d1;
+	border: #f97e76 solid 1px;
+	border-radius: 4px;
+}
+
+.addprojectbox .addprojectbox-errormsgtitle{
+	font-size: 25px;
+	font-family: "fira_sansbook";
+	color: #f97e76;
+	line-height: 1.4em;
+}
+
+.addprojectbox .addprojectbox-errormsgtext{
+	font-size: 15px;
+	font-family: "fira_sansbook";
+	color: #f97e76;
+}
+
+.addprojectbox .addproject-errorboxclose{
+	float:right;
+	margin: 0 -3px 0 0;
+	text-decoration: none;
+	color:#f97e76;
+}
+/*Error Msg END*/
+
+
+/*Success Msg START*/
+
+.addprojectbox .addprojectbox-successmsgboxwrap{
+	position: absolute;
+	display: none;
+	margin-top: 43%;
+	width: 89%;
+	padding: 20px;
+
+	text-align: center;
+
+	background: #eff3f7;
+	border-radius: 4px;
+	box-shadow: 0 6px 13px rgba(0,0,0,0.35); 
+}
+
+.addprojectbox .addprojectbox-successmsgbox{
+	padding: 0px 8px;
+	overflow: hidden;
+
+	text-align: left;
+
+	background: #b8e1ce;
+	border: #49bb7b solid 1px;
+	border-radius: 4px;
+}
+
+.addprojectbox .addprojectbox-successmsgtitle{
+	font-size: 25px;
+	font-family: "fira_sansbook";
+	color: #49bb7b;
+	line-height: 1.4em;
+}
+
+.addprojectbox .addprojectbox-successmsgtext{
+	font-size: 15px;
+	font-family: "fira_sansbook";
+	color: #49bb7b;
+}
+
+.addprojectbox .addproject-successboxclose{
+	float:right;
+	color: #49bb7b;
+	text-decoration: none;
+	margin: 0 -1px 0 0;
+}
+/*Success Msg END*/
+
+
+
+.addprojectbox .addprojectbox-label{
+	display: block;
+
+	font-family: "fira_sansbook";
+	font-size: 17px;
+	color: #959aa8;
+}
+
+.addprojectbox .addprojectbox-input{
+	display: block;
+	width: 97%;
+	margin: 0 0 5px 0;
+	padding: 10px 0 10px 7px; 
+	
+	font-family: "fira_sanslight";
+	color: #48cbe8;
+	font-size: 13px;
+	
+	border: #48cbe8 solid 1px;
+	border-radius: 3px;
+}
+
+.addprojectbox .addprojectbox-input.error{
+	background: #fad2d1;
+	border: #f97e76 solid 1px;
+}
+
+
+.addprojectbox .addprojectbox-input::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+
+/*File Input Style START*/
+.addprojectbox .addprojectbox-fileinputwrap{
+	display: block;
+	margin-bottom: 5px;
+	max-height: 41px;
+	overflow: hidden;
+
+	background: #FFF;
+	border: #48cbe8 solid 1px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.addprojectbox .addprojectbox-filename{
+	float: left;
+	width: 82%;
+	margin: 11px 0 0 5px;
+	
+	font-family: "fira_sanslight";
+	color: #48cbe8;
+	font-size: 13px;
+}
+
+.addprojectbox .addprojectbox-addfileicon{
+	display: block;
+	float: right;
+	height: 41px;
+	width: 52px;
+
+	background: #48cbe8 url(../images/addfileimg.png) no-repeat center center;
+}
+
+.addprojectbox .addprojectbox-inputfiles{
+	position: absolute;
+	left:-9999px;
+}
+/*File Input Style END*/
+
+.addprojectbox .addprojectbox-input.text-area{
+	padding-right: 7px;
+	width: 95%;
+	min-height: 90px;
+	
+	resize: none;
+}
+
+.addprojectbox .addprojectbox-subbtn{
+	display: block;
+	margin: auto;
+	margin-top: 14px;
+	padding: 0 28px;
+	
+	font-size: 19px;
+	color: #FFF; 
+	font-family: 'fira_sansbook';
+	
+	border: none;
+	background: #48cbe8;
+	border-radius: 7px;
+	box-shadow: 0 4px 1px #3ba8c0;
+}
+
+.addprojectbox .addprojectbox-subbtn:active,
+.addprojectbox .addprojectbox-subbtn:focus{
+	outline: none;
+}
+
+.addprojectbox .addprojectbox-subbtn:active{
+	margin-top: 18px;
+	margin-bottom: -4px;
+	box-shadow: none;
 }

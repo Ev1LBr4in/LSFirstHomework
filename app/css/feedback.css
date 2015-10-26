@@ -58,6 +58,11 @@
 	border-radius: 3px;
 }
 
+.feedbackbox .feedbackform-input.error{
+	background: #fad2d1;
+	border: #f97e76 solid 1px;
+}
+
 .feedbackbox .feedbackform-input::-webkit-input-placeholder{
 	color: #48cbe8;
  }

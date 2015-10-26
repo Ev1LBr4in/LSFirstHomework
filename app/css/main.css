@@ -303,5 +303,21 @@ display: block;
 .container:after, .clearfix:after{
 	clear: both;
 }
+
 /* clearfix - end */
 /* Общие классы - конец */
+
+/*QTIPS*/
+
+ .qtips{
+	color: #FFF;
+	font-size: 15px;
+	font-family: 'fira_sansbook';
+	white-space: nowrap;
+	padding: 0 2px;
+
+
+ 	background: #f97e76;
+ 	border: #f97e76 solid 1px;
+ 	border-radius: 3px;
+ }
