@@ -181,11 +181,11 @@
 
 						<label for="addfile-input" class="addprojectbox-label">Картинка проекта</label>
 
-						<label class="addprojectbox-fileinputwrap" for="addfile-input">
-							<input type="text" id="addprojectbox-filename" class="addprojectbox-filename">
-							<span class="addprojectbox-addfileicon"></span>
-							<input class="addprojectbox-inputfiles" type="file" name="projimg" id="addfile-input">
-						</label>
+						<div class="addprojectbox-fileinputwrap">
+							<input id="addfile-text" type="text" class="addprojectbox-input" name=""  qtip-content = "Вы не добавили фаил" qtip-pos = "left" disabled="" placeholder="Загрузите изображение">
+							<label class="addprojectbox-addfileicon" for="addfile-input">
+							<input class="addprojectbox-inputfiles" type="file" name="projimg" id="addfile-input"></label>
+						</div>
 
 						<label for="link" class="addprojectbox-label">URL проекта</label>
 						<input placeholder="Добавьте ссылку" class="addprojectbox-input" type="text" name="link" id="link"  qtip-content = "Вы не добавили ссылку на проект" qtip-pos = "left">
@@ -233,7 +233,7 @@
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
-	<script src="js/validation.js"></script>
+		<script src="js/validation.js"></script>
 	<script src="js/feedback.js"></script>
 </body>
 </html>

@@ -309,16 +309,17 @@
 
 .addprojectbox .addprojectbox-input{
 	display: block;
-	width: 97%;
-	margin: 0 0 5px 0;
-	padding: 10px 0 10px 7px; 
+	margin: 0 0 5px 0; 
 	
-	font-family: "fira_sanslight";
 	color: #48cbe8;
 	font-size: 13px;
 	
+	background: #fff;
 	border: #48cbe8 solid 1px;
 	border-radius: 3px;
+	width: 97%;
+	padding: 10px 0 10px 7px;
+	font-family: "fira_sanslight";
 }
 
 .addprojectbox .addprojectbox-input.error{
@@ -331,17 +332,18 @@
 	color: #48cbe8;
 }
 
+
 /*File Input Style START*/
 .addprojectbox .addprojectbox-fileinputwrap{
 	display: block;
-	margin-bottom: 5px;
-	max-height: 41px;
+	position: relative;
 	overflow: hidden;
+	width: 100%;
 
-	background: #FFF;
+/*	background: #FFF;
 	border: #48cbe8 solid 1px;
 	border-radius: 3px;
-	cursor: pointer;
+	*/
 }
 
 .addprojectbox .addprojectbox-filename{
@@ -356,10 +358,14 @@
 
 .addprojectbox .addprojectbox-addfileicon{
 	display: block;
-	float: right;
-	height: 41px;
+	position: absolute;
+	height: 43px;
 	width: 52px;
+	right: 0;
+	top: 0;
 
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
 	background: #48cbe8 url(../images/addfileimg.png) no-repeat center center;
 }
 

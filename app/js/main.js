@@ -1,29 +1,30 @@
-// // $(document).ready(function($) {
-// //      console.log("я на главной странице");    
+// // // $(document).ready(function($) {
+// // //      console.log("я на главной странице");    
+// // // });
+
+
+// // 
+// // //POPUP WINDOW
+// // 	$('#addproj-button').on('click', function(e) {
+// // 		$('#addproj').bPopup({
+// //             positionStyle: 'fixed',
+// //             speed: 450,
+// //             transition: 'slideBack',
+// //             onClose: function(){
+// //             	this.find('form').trigger("reset");
+// //             }
+// // 		});
+// // 	});
 // // });
 
+// // // // FAKE INPUT
 
-// $(document).ready(function() {
-// //POPUP WINDOW
-// 	$('#addproj-button').on('click', function(e) {
-// 		$('#addproj').bPopup({
-//             positionStyle: 'fixed',
-//             speed: 450,
-//             transition: 'slideBack',
-//             onClose: function(){
-//             	this.find('form').trigger("reset");
-//             }
-// 		});
-// 	});
+// // 	$('#addfile-input').change(function() {
+// //        	var fileName = $(this).val().replace("C:\\fakepath\\", "").substring(0,40);
+// //         $('#addfile-text').html(fileName);
+// //      });
 
-// // FAKE INPUT
-
-	// $('#addfile-input').change(function() {
- //       	var fileName = $(this).val().replace("C:\\fakepath\\", "").substring(0,40);
- //        $('#addfile-text').html(fileName);
- //     });
-
-// });
+// // // 
 
 
 var myModule = (function () {
@@ -37,8 +38,21 @@ var myModule = (function () {
     var _setUpListner = function (){
         $('#addproj-button').on("click", _showPopup); // open popup window
         $("#addprojectbox-form").on("submit", _addProj); // Project add
+        $('.addprojectbox-inputfiles').on('change', _fileUpload);
     }
 
+
+// FILEUPLOAD
+
+var _fileUpload = function (){
+
+    var fileName = $(this).val().replace("C:\\fakepath\\", "");
+    $('#addfile-text')
+                    .val(fileName)
+                    .trigger('hideTooltip')
+                    .removeClass('error');
+
+}
 
 
 // POPUP WINDOW
@@ -120,7 +134,6 @@ var myModule = (function () {
 
 })();
 
-myModule.init();
 
 
 
@@ -128,22 +141,24 @@ myModule.init();
 
 
 
-
-
-// PLACEHOLDER FOR IE8
-
-if(!Modernizr.input.placeholder){
-$('input, textarea').placeholder();
-}
-
-// ADD PROJECT ERROR MSG COLOSE
-$('.addproject-errorboxclose').on("click", function(){
-    $(".addprojectbox-errormsgbox").hide();
+$(document).ready(function() {
+    
+    myModule.init();
+    
+    // PLACEHOLDER FOR IE8
+    
+    if(!Modernizr.input.placeholder){
+    $('input, textarea').placeholder();
+    }
+    
+    // ADD PROJECT ERROR MSG COLOSE
+    $('.addproject-errorboxclose').on("click", function(){
+        $(".addprojectbox-errormsgbox").hide();
+    });
+    // ADD PROJECT SUCCESS MSG COLOSE
+    $('.addproject-successboxclose').on("click", function(){
+        $(".addprojectbox-successmsgboxwrap").hide();
+    });
+    
+    
 });
-// ADD PROJECT SUCCESS MSG COLOSE
-$('.addproject-successboxclose').on("click", function(){
-    $(".addprojectbox-successmsgboxwrap").hide();
-});
-
-
-
