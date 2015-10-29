@@ -20,6 +20,7 @@ var feedback = (function () {
     var _ajaxForm = function (form, url){
     	console.log("ajax запрос с проверкой");
     	if (!validation.validateForm(form)) return false;
+        
     };
 
     return {

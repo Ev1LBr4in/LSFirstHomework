@@ -75,7 +75,7 @@ var validation = (function () {
 			$.each(elements, function (index, value){
 				var element = $(value),
 				val = element.val(),
-				pos = element.attr('qtip-pos')
+				pos = element.attr('qtip-pos');
 
 				if(val.length === 0){
 					element.addClass('error');
@@ -84,8 +84,7 @@ var validation = (function () {
 				}
 
 		});
-	
-	
+		return valid;
     };
 
     return {

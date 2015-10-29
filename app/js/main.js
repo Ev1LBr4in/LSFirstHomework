@@ -1,31 +1,3 @@
-// // // $(document).ready(function($) {
-// // //      console.log("я на главной странице");    
-// // // });
-
-
-// // 
-// // //POPUP WINDOW
-// // 	$('#addproj-button').on('click', function(e) {
-// // 		$('#addproj').bPopup({
-// //             positionStyle: 'fixed',
-// //             speed: 450,
-// //             transition: 'slideBack',
-// //             onClose: function(){
-// //             	this.find('form').trigger("reset");
-// //             }
-// // 		});
-// // 	});
-// // });
-
-// // // // FAKE INPUT
-
-// // 	$('#addfile-input').change(function() {
-// //        	var fileName = $(this).val().replace("C:\\fakepath\\", "").substring(0,40);
-// //         $('#addfile-text').html(fileName);
-// //      });
-
-// // // 
-
 
 var myModule = (function () {
 
@@ -62,6 +34,7 @@ var _fileUpload = function (){
         $('#addproj').bPopup({
             positionStyle: 'fixed',
             speed: 150,
+            follow: [false, false],
             transition: 'slideBack',
             onClose: function() {
                 $(".addprojectbox-errormsgbox").hide();
@@ -79,26 +52,29 @@ var _fileUpload = function (){
 
         //Обявляем переменные
         var form = $(this),
-            url = '../' + $(this).attr('action');
+            url = '../bvgbv' + $(this).attr('action');
             serverAnswer = _ajaxForm(form, url);
 
-           serverAnswer
-            .done(function(ans){
-                console.log(ans);
-                if(ans.status === "OK"){
-                    console.log(ans.text);
-                    $(".addprojectbox-successmsgboxwrap").show();
-                }
-                else{
-                    console.log(ans.text);
-                    $(".addprojectbox-errormsgbox").show();
-                    $(".addprojectbox-errormsgtext").text(ans.text);
-                }
-            })
-            .always(function(){
-                console.log("complete");
+           if(serverAnswer){ 
+            serverAnswer
+             .done(function(ans){
+                 console.log(ans);
+                 if(ans.status === "OK"){
+                     console.log(ans.text);
+                     $(".addprojectbox-successmsgboxwrap").show();
+                 }
+                 else{
+                     console.log(ans.text);
+                     $(".addprojectbox-errormsgbox").show();
+                     $(".addprojectbox-errormsgtext").text(ans.text);
+                 }
+             })
+             .always(function(){
+                 console.log("complete");
+    
+             });
+            };        
 
-            });
     };
 
 // AJAX  
